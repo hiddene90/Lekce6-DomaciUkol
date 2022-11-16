@@ -20,19 +20,21 @@ public class Plant {
     }
 
     public Plant(String name, LocalDate planted, int frequencyOfWatering) throws PlantException {
-        this.name = name;
-        this.planted = planted;
-        setFrequencyOfWatering(frequencyOfWatering);
-        this.notes = "";
-        this.watered = LocalDate.now();
+          this(name, "",planted, LocalDate.now(),frequencyOfWatering);
+//        this.name = name;
+//        this.planted = planted;
+//        setFrequencyOfWatering(frequencyOfWatering);
+//        this.notes = "";
+//        this.watered = LocalDate.now();
     }
 
-    public Plant(String name) {
-        this.name = name;
-        this.planted = LocalDate.now();
-        this.frequencyOfWatering = 7;
-        this.notes = "";
-        this.watered = LocalDate.now();
+    public Plant(String name) throws PlantException {
+        this(name,"",LocalDate.now(),LocalDate.now(),7);
+//        this.name = name;
+//        this.planted = LocalDate.now();
+//        this.frequencyOfWatering = 7;
+//        this.notes = "";
+//        this.watered = LocalDate.now();
     }
 
     ///region

@@ -46,8 +46,13 @@ public class Main {
         } catch (PlantException e) {
             System.err.println(e.getLocalizedMessage());
         }
+         Plant ruze = null;
+        try {
+            ruze = new Plant("růže");
+        }catch (PlantException e){
+            System.err.println(e.getLocalizedMessage());
 
-        Plant ruze = new Plant("růže");
+        }
 
         listOfPlants.addPlant(rododendron);
         listOfPlants.addPlant(ruze);
