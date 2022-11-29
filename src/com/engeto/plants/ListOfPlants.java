@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import static com.engeto.plants.Main.OUTPUT_FILE;
 
-public class ListOfPlants {
+public class ListOfPlants  {
     public static final String DELIMITER = "\t";
     private List<Plant> plantList = new ArrayList<>();
 
